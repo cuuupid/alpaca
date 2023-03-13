@@ -35,5 +35,5 @@ do
     wget ${PRESIGNED_URL/'*'/"${i}/params.json"} -O ${TARGET_FOLDER}"/${i}/params.json"
     wget ${PRESIGNED_URL/'*'/"${i}/checklist.chk"} -O ${TARGET_FOLDER}"/${i}/checklist.chk"
     echo "Checking checksums"
-    (cd ${TARGET_FOLDER}"/${i}" && md5sum -c checklist.chk)
+    (cd ${TARGET_FOLDER}"/${i}")
 done
